@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function oe(){
+        var num,fact,index;
+        fact=1;
+        num = parseInt(document.getElementById("num").value);
+        for (let index = 1; index <= num; index++) {
+            fact = index*fact;
+        }
+        document.write(fact);
+    }
+    </script>
+    <p> Enter the Number :<input id="num"></p>
+    <button onclick="oe()">Check</button>
+</body>
+</html>

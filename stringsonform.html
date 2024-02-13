@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;        
+        }
+        .dropbtn {
+          background-color: cyan;
+          color: black;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          left: -50px;
+          top: 10px;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+        }
+        
+        .dropdown-content button {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          width: 200px;
+          position: relative;
+          left: -50px;
+          top: 10px;
+        }
+        
+        .dropdown-content button:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: rgba(0, 255, 255, 0.492);
+        }
+        .whole{
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function u(){
+        var str;
+        str = document.getElementById("str").value;
+        window.alert(str.toUpperCase());
+        }
+        function r(){
+        var str;
+        str = document.getElementById("str").value;
+        window.alert(str.split('').reverse().join(''));
+        }
+    </script>
+    <div class="whole">
+        <center>
+    <p> Enter the String :<input id="str"></p>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <button onclick="r()">esreveR</button>
+            <button onclick="u()">UPPERCASE</button>
+        </div>
+      </div>
+    </center>
+    </div>
+</body>
+</html>
